@@ -5,10 +5,14 @@ struct Rectangle {
 }
 
 fn main() {
+    let scale = 2;
+
     let rect1 = Rectangle {
-        width: 30,
+        width: dbg!(30 * scale),
         height: 50,
     };
+
+    dbg!(&rect1);
 
     println!("rect1 is {:#?}", rect1);
 
